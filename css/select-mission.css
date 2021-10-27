@@ -1,0 +1,211 @@
+.main {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+.main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  flex: 1 1;
+  background-position: top;
+  background-repeat: repeat;
+  background-attachment: fixed !important;
+  background-size: 100% !important;
+  filter: brightness(0.75) blur(5px);
+  z-index: 0;
+}
+.main-content {
+  position: relative;
+  z-index: 1;
+}
+.select-mission::before {
+  background: url("../assets/mission-bg.jpg");
+}
+.mission-main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5vw 0 3.5vw 0;
+}
+.mission-main-header h1 {
+  font-size: 4vw;
+  font-weight: 500;
+  color: var(--white);
+}
+.mission-main-header ul li a {
+  font-size: 1vw;
+  border: 0 !important;
+  color: var(--gray);
+  padding: 0.5vw 0;
+  margin: 0 2.5vw 0 0;
+  display: flex;
+}
+.mission-main-header ul :last-child a {
+  margin: 0;
+}
+.mission-main-header ul li {
+  border: 0 !important;
+}
+.mission-main-header ul li a:hover,
+.mission-main-header ul li:hover {
+  color: var(--white);
+}
+.mission-main-header .nav-tabs .nav-item.show .nav-link,
+.mission-main-header .nav-tabs .nav-link.active {
+  background-color: transparent;
+  color: var(--pink);
+  border: 0;
+  border-bottom: 1px solid var(--pink) !important;
+}
+.missions-wrapper {
+  margin: 0 0 7.5vw 0;
+}
+.mission-box {
+  width: 100%;
+  position: relative;
+}
+.mission-box-container{
+  width: 100%;
+  padding: 2.25vw 2.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url("../assets/mission-box-border.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  margin: 0 0 2.5vw 0;
+  cursor: pointer;
+  clip-path: polygon(
+    1.05% 0,
+    97% 0,
+    100% 16%,
+    100% 100%,
+    0 100%,
+    0 85%,
+    1.05% 74%
+  );
+}
+.mission-box-container:hover {
+  background-color: rgba(255, 255, 255, 0.075);
+}
+.mission-progress {
+  width: 0.5vw;
+  height: 11.5vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--gray);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  clip-path: polygon(0 0, 100% 0%, 100% 95%, 0% 100%);
+}
+.mission-progress-inner {
+  width: 0.5vw;
+  height: 65%;
+  background-color: var(--white);
+  clip-path: polygon(0 0, 100% 0%, 100% 95%, 0% 100%);
+}
+.mission-box > div > img {
+  width: 20vw;
+}
+.name-of-mission {
+  width: 350px;
+}
+.name-of-mission h5 {
+  font-size: 1.75vw;
+  color: var(--white);
+}
+.name-of-mission h6 {
+  font-size: 1vw;
+  color: var(--gray);
+  margin: 1vw 0 0 0;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+}
+.mission-box button {
+  margin: 0 5vw 0 0;
+}
+.mission-box main h6 {
+  font-size: 1vw;
+  color: var(--gray);
+  font-weight: 400;
+  margin: 0 0 0.5vw 0;
+}
+.mission-box main div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.mission-box main h5 {
+  font-size: 0.85vw;
+  color: var(--blue);
+  font-weight: 400;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.mission-box main span {
+  font-size: 2vw;
+  font-weight: 700;
+  margin: 0 0 0 1.5vw;
+  color: var(--blue);
+}
+.mission-box main img {
+  width: 3.75vw;
+}
+.mission-status {
+  padding: 0.5vw 5vw 0.5vw 1.5vw;
+  font-size: 1.15vw;
+  color: var(--white);
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+  transform: translate(1.15vw, 0);
+}
+.unassigned-mission-box .mission-status {
+  background-color: var(--gray2);
+}
+.unassigned-mission-box .mission-progress-inner {
+  height: 20%;
+}
+.assigned-mission-box .mission-status {
+  background-color: var(--pink);
+}
+.assigned-mission-box .mission-progress-inner {
+  height: 20%;
+}
+.inprogress-mission-box .mission-status {
+  background-color: var(--orange);
+}
+.inprogress-mission-box .mission-progress-inner {
+  height: 75%;
+}
+.completed-mission-box .mission-status {
+  background-color: var(--skyblue);
+}
+.completed-mission-box .mission-progress-inner {
+  height: 100%;
+}
+.mission-box.completed-mission-box {
+  margin: 0;
+}
+.mission-box > div > img.mission-3-lines {
+  width: 5vw;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  object-fit: contain;
+  transform: translate(-8.75vw, 0);
+}

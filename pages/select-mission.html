@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OutKast | Select Mission</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/select-mission.css" />
+  </head>
+  <body>
+    <main class="main select-mission">
+      <div class="main-content">
+        <header class="header">
+          <div class="header-left">
+            <img src="../assets/header-logo.png" alt="" />
+            <a href="#">MISSIONS</a>
+            <a href="#">MARKETPLACE</a>
+          </div>
+          <div class="header-right">
+            <div class="dropdown ddh-1">
+              <button
+                type="button"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+              >
+                <main>
+                  <img
+                    src="../assets/header-dropdown-shield-image.png"
+                    alt=""
+                  />
+                  <h6>SHARDS: <span>3545</span></h6>
+                  <i class="fas fa-arrow-down"></i>
+                </main>
+              </button>
+              <div class="dropdown-menu">
+                <h6>SHARDS: <span>2353</span></h6>
+                <h6>WALLET SHARDS: <span>2353</span></h6>
+                <h5>TRANSFER</h5>
+              </div>
+            </div>
+            <button data-tilt class="blue-btn js-tilt">CONNECT WALLET</button>
+            <div class="dropdown ddh-2">
+              <button
+                type="button"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+              >
+                <i class="fas fa-user"></i>
+              </button>
+              <div class="dropdown-menu">
+                <div class="header-user-details">
+                  <img src="../assets/saim.jpg" alt="" />
+                  <span>
+                    <h2>KAL VISUALS</h2>
+                    <h3>@kalvisuals</h3>
+                  </span>
+                </div>
+                <main>
+                  <a href="">SETTING</a>
+                  <a href="">MY WALLET</a>
+                  <a href="">JOIN DISCORD</a>
+                </main>
+                <a href="">LOGOUT</a>
+              </div>
+            </div>
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+        </header>
+        <div class="mission-main-header">
+          <h1>MISSIONS</h1>
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#all">ALL ACTIVE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#unassigned"
+                >UNASSIGNED</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#assigned"
+                >ASSIGNED</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#inprogress"
+                >IN PROGRESS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#completed"
+                >COMPLETRED</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="missions-wrapper">
+          <div class="tab-content">
+            <div class="tab-pane active" id="all">
+              <div class="mission-box unassigned-mission-box">
+                <div class="mission-progress">
+                  <div class="mission-progress-inner"></div>
+                </div>
+                <div class="mission-box-container">
+                  <img
+                    class="mission-3-lines"
+                    src="../assets/unassigned-mission-3-lines.png"
+                    alt=""
+                  />
+                  <div class="mission-status">UNAVAILABLE</div>
+                  <img src="../assets/mission-hero-image.png" alt="" />
+                  <div class="name-of-mission">
+                    <h5>NAME OF MISSION</h5>
+                    <h6>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </h6>
+                  </div>
+                  <main>
+                    <h6>Time</h6>
+                    <h5>Start in <span>12:32:09</span></h5>
+                  </main>
+                  <button data-tilt class="blue-btn">START MISSION</button>
+                </div>
+              </div>
+              <div class="mission-box assigned-mission-box">
+                <div class="mission-progress">
+                  <div class="mission-progress-inner"></div>
+                </div>
+                <div class="mission-box-container">
+                  <img
+                    class="mission-3-lines"
+                    src="../assets/assigned-mission-3-lines.png"
+                    alt=""
+                  />
+                  <div class="mission-status">ASSIGNED</div>
+                  <img src="../assets/mission-hero-image.png" alt="" />
+                  <div class="name-of-mission">
+                    <h5>NAME OF MISSION</h5>
+                    <h6>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </h6>
+                  </div>
+                  <main>
+                    <h6>Time</h6>
+                    <h5>Start in <span>12:32:09</span></h5>
+                  </main>
+                  <button data-tilt class="blue-btn">START MISSION</button>
+                </div>
+              </div>
+              <div class="mission-box inprogress-mission-box">
+                <div class="mission-progress">
+                  <div class="mission-progress-inner"></div>
+                </div>
+                <div class="mission-box-container">
+                  <img
+                    class="mission-3-lines"
+                    src="../assets/inprogress-mission-3-lines.png"
+                    alt=""
+                  />
+                  <div class="mission-status">IN PROGRESS</div>
+                  <img src="../assets/mission-hero-image.png" alt="" />
+                  <div class="name-of-mission">
+                    <h5>NAME OF MISSION</h5>
+                    <h6>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </h6>
+                  </div>
+                  <main>
+                    <h6>Time</h6>
+                    <h5>Start in <span>12:32:09</span></h5>
+                  </main>
+                  <button data-tilt class="blue-btn">START MISSION</button>
+                </div>
+              </div>
+              <div class="mission-box completed-mission-box">
+                <div class="mission-progress">
+                  <div class="mission-progress-inner"></div>
+                </div>
+                <div class="mission-box-container">
+                  <img
+                    class="mission-3-lines"
+                    src="../assets/completed-mission-3-lines.png"
+                    alt=""
+                  />
+                  <div class="mission-status">COMPLETED</div>
+                  <img src="../assets/mission-hero-image.png" alt="" />
+                  <div class="name-of-mission">
+                    <h5>NAME OF MISSION</h5>
+                    <h6>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </h6>
+                  </div>
+                  <main>
+                    <h6>Time</h6>
+                    <h5>Start in <span>12:32:09</span></h5>
+                  </main>
+                  <button data-tilt class="blue-btn">START MISSION</button>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="unassigned">
+              <div class="mission-box unassigned-mission-box">
+                <div class="mission-progress">
+                  <div class="mission-progress-inner"></div>
+                </div>
+                <div class="mission-box-container">
+                  <img
+                    class="mission-3-lines"
+                    src="../assets/unassigned-mission-3-lines.png"
+                    alt=""
+                  />
+                  <div class="mission-status">UNAVAILABLE</div>
+                  <img src="../assets/mission-hero-image.png" alt="" />
+                  <div class="name-of-mission">
+                    <h5>NAME OF MISSION</h5>
+                    <h6>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </h6>
+                  </div>
+                  <main>
+                    <h6>Time</h6>
+                    <h5>Start in <span>12:32:09</span></h5>
+                  </main>
+                  <button data-tilt class="blue-btn">START MISSION</button>
+                </div>
+              </div>
+              <div class="mission-box assigned-mission-box">
+                <div class="mission-progress">
+                  <div class="mission-progress-inner"></div>
+                </div>
+                <div class="mission-box-container">
+                  <img
+                    class="mission-3-lines"
+                    src="../assets/assigned-mission-3-lines.png"
+                    alt=""
+                  />
+                  <div class="mission-status">ASSIGNED</div>
+                  <img src="../assets/mission-hero-image.png" alt="" />
+                  <div class="name-of-mission">
+                    <h5>NAME OF MISSION</h5>
+                    <h6>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </h6>
+                  </div>
+                  <main>
+                    <h6>Time</h6>
+                    <h5>Start in <span>12:32:09</span></h5>
+                  </main>
+                  <button data-tilt class="blue-btn">START MISSION</button>
+                </div>
+              </div>
+              <div class="mission-box inprogress-mission-box">
+                <div class="mission-progress">
+                  <div class="mission-progress-inner"></div>
+                </div>
+                <div class="mission-box-container">
+                  <img
+                    class="mission-3-lines"
+                    src="../assets/inprogress-mission-3-lines.png"
+                    alt=""
+                  />
+                  <div class="mission-status">IN PROGRESS</div>
+                  <img src="../assets/mission-hero-image.png" alt="" />
+                  <div class="name-of-mission">
+                    <h5>NAME OF MISSION</h5>
+                    <h6>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </h6>
+                  </div>
+                  <main>
+                    <h6>Time</h6>
+                    <h5>Start in <span>12:32:09</span></h5>
+                  </main>
+                  <button data-tilt class="blue-btn">START MISSION</button>
+                </div>
+              </div>
+              <div class="mission-box completed-mission-box">
+                <div class="mission-progress">
+                  <div class="mission-progress-inner"></div>
+                </div>
+                <div class="mission-box-container">
+                  <img
+                    class="mission-3-lines"
+                    src="../assets/completed-mission-3-lines.png"
+                    alt=""
+                  />
+                  <div class="mission-status">COMPLETED</div>
+                  <img src="../assets/mission-hero-image.png" alt="" />
+                  <div class="name-of-mission">
+                    <h5>NAME OF MISSION</h5>
+                    <h6>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </h6>
+                  </div>
+                  <main>
+                    <h6>Time</h6>
+                    <h5>Start in <span>12:32:09</span></h5>
+                  </main>
+                  <button data-tilt class="blue-btn">START MISSION</button>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="assigned">
+              <div class="mission-box unassigned-mission-box">
+                <div class="mission-progress">
+                  <div class="mission-progress-inner"></div>
+                </div>
+                <div class="mission-box-container">
+                  <img
+                    class="mission-3-lines"
+                    src="../assets/unassigned-mission-3-lines.png"
+                    alt=""
+                  />
+                  <div class="mission-status">UNAVAILABLE</div>
+                  <img src="../assets/mission-hero-image.png" alt="" />
+                  <div class="name-of-mission">
+                    <h5>NAME OF MISSION</h5>
+                    <h6>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </h6>
+                  </div>
+                  <main>
+                    <h6>Time</h6>
+                    <h5>Start in <span>12:32:09</span></h5>
+                  </main>
+                  <button data-tilt class="blue-btn">START MISSION</button>
+                </div>
+              </div>
+              <div class="mission-box assigned-mission-box">
+                <div class="mission-progress">
+                  <div class="mission-progress-inner"></div>
+                </div>
+                <div class="mission-box-container">
+                  <img
+                    class="mission-3-lines"
+                    src="../assets/assigned-mission-3-lines.png"
+                    alt=""
+                  />
+                  <div class="mission-status">ASSIGNED</div>
+                  <img src="../assets/mission-hero-image.png" alt="" />
+                  <div class="name-of-mission">
+                    <h5>NAME OF MISSION</h5>
+                    <h6>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </h6>
+                  </div>
+                  <main>
+                    <h6>Time</h6>
+                    <h5>Start in <span>12:32:09</span></h5>
+                  </main>
+                  <button data-tilt class="blue-btn">START MISSION</button>
+                </div>
+              </div>
+              <div class="mission-box inprogress-mission-box">
+                <div class="mission-progress">
+                  <div class="mission-progress-inner"></div>
+                </div>
+                <div class="mission-box-container">
+                  <img
+                    class="mission-3-lines"
+                    src="../assets/inprogress-mission-3-lines.png"
+                    alt=""
+                  />
+                  <div class="mission-status">IN PROGRESS</div>
+                  <img src="../assets/mission-hero-image.png" alt="" />
+                  <div class="name-of-mission">
+                    <h5>NAME OF MISSION</h5>
+                    <h6>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </h6>
+                  </div>
+                  <main>
+                    <h6>Time</h6>
+                    <h5>Start in <span>12:32:09</span></h5>
+                  </main>
+                  <button data-tilt class="blue-btn">START MISSION</button>
+                </div>
+              </div>
+              <div class="mission-box completed-mission-box">
+                <div class="mission-progress">
+                  <div class="mission-progress-inner"></div>
+                </div>
+                <div class="mission-box-container">
+                  <img
+                    class="mission-3-lines"
+                    src="../assets/completed-mission-3-lines.png"
+                    alt=""
+                  />
+                  <div class="mission-status">COMPLETED</div>
+                  <img src="../assets/mission-hero-image.png" alt="" />
+                  <div class="name-of-mission">
+                    <h5>NAME OF MISSION</h5>
+                    <h6>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </h6>
+                  </div>
+                  <main>
+                    <h6>Time</h6>
+                    <h5>Start in <span>12:32:09</span></h5>
+                  </main>
+                  <button data-tilt class="blue-btn">START MISSION</button>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="inprogress">
+              <div class="mission-box unassigned-mission-box">
+                <div class="mission-progress">
+                  <div class="mission-progress-inner"></div>
+                </div>
+                <div class="mission-box-container">
+                  <img
+                    class="mission-3-lines"
+                    src="../assets/unassigned-mission-3-lines.png"
+                    alt=""
+                  />
+                  <div class="mission-status">UNAVAILABLE</div>
+                  <img src="../assets/mission-hero-image.png" alt="" />
+                  <div class="name-of-mission">
+                    <h5>NAME OF MISSION</h5>
+                    <h6>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </h6>
+                  </div>
+                  <main>
+                    <h6>Time</h6>
+                    <h5>Start in <span>12:32:09</span></h5>
+                  </main>
+                  <button data-tilt class="blue-btn">START MISSION</button>
+                </div>
+              </div>
+              <div class="mission-box assigned-mission-box">
+                <div class="mission-progress">
+                  <div class="mission-progress-inner"></div>
+                </div>
+                <div class="mission-box-container">
+                  <img
+                    class="mission-3-lines"
+                    src="../assets/assigned-mission-3-lines.png"
+                    alt=""
+                  />
+                  <div class="mission-status">ASSIGNED</div>
+                  <img src="../assets/mission-hero-image.png" alt="" />
+                  <div class="name-of-mission">
+                    <h5>NAME OF MISSION</h5>
+                    <h6>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </h6>
+                  </div>
+                  <main>
+                    <h6>Time</h6>
+                    <h5>Start in <span>12:32:09</span></h5>
+                  </main>
+                  <button data-tilt class="blue-btn">START MISSION</button>
+                </div>
+              </div>
+              <div class="mission-box inprogress-mission-box">
+                <div class="mission-progress">
+                  <div class="mission-progress-inner"></div>
+                </div>
+                <div class="mission-box-container">
+                  <img
+                    class="mission-3-lines"
+                    src="../assets/inprogress-mission-3-lines.png"
+                    alt=""
+                  />
+                  <div class="mission-status">IN PROGRESS</div>
+                  <img src="../assets/mission-hero-image.png" alt="" />
+                  <div class="name-of-mission">
+                    <h5>NAME OF MISSION</h5>
+                    <h6>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </h6>
+                  </div>
+                  <main>
+                    <h6>Time</h6>
+                    <h5>Start in <span>12:32:09</span></h5>
+                  </main>
+                  <button data-tilt class="blue-btn">START MISSION</button>
+                </div>
+              </div>
+              <div class="mission-box completed-mission-box">
+                <div class="mission-progress">
+                  <div class="mission-progress-inner"></div>
+                </div>
+                <div class="mission-box-container">
+                  <img
+                    class="mission-3-lines"
+                    src="../assets/completed-mission-3-lines.png"
+                    alt=""
+                  />
+                  <div class="mission-status">COMPLETED</div>
+                  <img src="../assets/mission-hero-image.png" alt="" />
+                  <div class="name-of-mission">
+                    <h5>NAME OF MISSION</h5>
+                    <h6>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </h6>
+                  </div>
+                  <main>
+                    <h6>Time</h6>
+                    <h5>Start in <span>12:32:09</span></h5>
+                  </main>
+                  <button data-tilt class="blue-btn">START MISSION</button>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="completed">
+              <div class="mission-box unassigned-mission-box">
+                <img
+                  class="mission-3-lines"
+                  src="../assets/unassigned-mission-3-lines.png"
+                  alt=""
+                />
+                <div class="mission-progress">
+                  <div class="mission-progress-inner"></div>
+                </div>
+                <div class="mission-status">UNAVAILABLE</div>
+                <img src="../assets/mission-hero-image.png" alt="" />
+                <div class="name-of-mission">
+                  <h5>NAME OF MISSION</h5>
+                  <h6>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </h6>
+                </div>
+                <main>
+                  <h6>Time</h6>
+                  <h5>Start in <span>12:32:09</span></h5>
+                </main>
+                <button data-tilt class="blue-btn">START MISSION</button>
+              </div>
+              <div class="mission-box assigned-mission-box">
+                <img
+                  class="mission-3-lines"
+                  src="../assets/assigned-mission-3-lines.png"
+                  alt=""
+                />
+                <div class="mission-progress">
+                  <div class="mission-progress-inner"></div>
+                </div>
+                <div class="mission-status">ASSIGNED</div>
+                <img src="../assets/mission-hero-image.png" alt="" />
+                <div class="name-of-mission">
+                  <h5>NAME OF MISSION</h5>
+                  <h6>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </h6>
+                </div>
+                <main>
+                  <h6>Time</h6>
+                  <h5>Start in <span>12:32:09</span></h5>
+                </main>
+                <button data-tilt class="blue-btn">START MISSION</button>
+              </div>
+              <div class="mission-box inprogress-mission-box">
+                <img
+                  class="mission-3-lines"
+                  src="../assets/inprogress-mission-3-lines.png"
+                  alt=""
+                />
+                <div class="mission-progress">
+                  <div class="mission-progress-inner"></div>
+                </div>
+                <div class="mission-status">IN PROGRESS</div>
+                <img src="../assets/mission-hero-image.png" alt="" />
+                <div class="name-of-mission">
+                  <h5>NAME OF MISSION</h5>
+                  <h6>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </h6>
+                </div>
+                <main>
+                  <h6>Time</h6>
+                  <h5>Start in <span>12:32:09</span></h5>
+                </main>
+                <button data-tilt class="blue-btn">START MISSION</button>
+              </div>
+              <div class="mission-box completed-mission-box">
+                <img
+                  class="mission-3-lines"
+                  src="../assets/completed-mission-3-lines.png"
+                  alt=""
+                />
+                <div class="mission-progress">
+                  <div class="mission-progress-inner"></div>
+                </div>
+                <div class="mission-status">COMPLETED</div>
+                <img src="../assets/mission-hero-image.png" alt="" />
+                <div class="name-of-mission">
+                  <h5>NAME OF MISSION</h5>
+                  <h6>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </h6>
+                </div>
+                <main>
+                  <h6>Time</h6>
+                  <h5>Start in <span>12:32:09</span></h5>
+                </main>
+                <button data-tilt class="blue-btn">START MISSION</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="footer-left">
+            <img src="../assets/header-logo.png" alt="" />
+          </div>
+          <div class="footer-right">
+            <a href="">MISSIONS</a>
+            <a href="">MARKETPLACE</a>
+            <span>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+            </span>
+            <b>© 2021</b>
+          </div>
+        </footer>
+      </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
