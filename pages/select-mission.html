@@ -19,6 +19,57 @@
   <body>
     <main class="main select-mission">
       <div class="main-content">
+        <div class="mob-header">
+          <header class="header">
+            <div class="header-left">
+              <img src="../assets/header-logo.png" alt="" />
+            </div>
+            <div class="header-right">
+              <div class="dropdown ddh-2">
+                <button
+                  type="button"
+                  class="dropdown-toggle"
+                  data-toggle="dropdown"
+                >
+                  <i class="fas fa-user"></i>
+                </button>
+                <div class="dropdown-menu">
+                  <div class="header-user-details">
+                    <img src="../assets/saim.jpg" alt="" />
+                    <span>
+                      <h2>KAL VISUALS</h2>
+                      <h3>@kalvisuals</h3>
+                    </span>
+                  </div>
+                  <main>
+                    <a href="">SETTING</a>
+                    <a href="">MY WALLET</a>
+                    <a href="">JOIN DISCORD</a>
+                  </main>
+                  <a href="">LOGOUT</a>
+                </div>
+              </div>
+              <i class="fas fa-shopping-cart"></i>
+              <i class="fas fa-times close-mob-header"></i>
+            </div>
+          </header>
+          <div class="mob-header-content">
+            <main class="mob-header-content-top">
+              <span></span>
+              <a href="">MISSIONS</a>
+              <span></span>
+              <a href="">MARKETPLACE</a>
+              <span></span>
+            </main>
+            <main class="mob-header-content-bottom">
+              <h6>SHARDS: <span>2335</span></h6>
+              <h6>WALLETSHARDS: <span>2335</span></h6>
+              <span></span>
+              <h5>TRANSFER</h5>
+              <botton class="blue-btn">CONNECT WALLET</botton>
+            </main>
+          </div>
+        </div>
         <header class="header">
           <div class="header-left">
             <img src="../assets/header-logo.png" alt="" />
@@ -73,22 +124,20 @@
               </div>
             </div>
             <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-bars open-mob-header"></i>
           </div>
         </header>
         <div class="mission-main-header">
           <h1>MISSIONS</h1>
           <ul class="nav nav-tabs">
             <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#all">ALL ACTIVE</a>
+              <a class="nav-link active" data-toggle="tab" href="#all"
+                >ALL ACTIVE</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" data-toggle="tab" href="#unassigned"
                 >UNASSIGNED</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#assigned"
-                >ASSIGNED</a
               >
             </li>
             <li class="nav-item">
@@ -98,7 +147,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" data-toggle="tab" href="#completed"
-                >COMPLETRED</a
+                >COMPLETED</a
               >
             </li>
           </ul>
@@ -317,112 +366,6 @@
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade" id="assigned">
-              <div class="mission-box unassigned-mission-box">
-                <div class="mission-progress">
-                  <div class="mission-progress-inner"></div>
-                </div>
-                <div class="mission-box-container">
-                  <img
-                    class="mission-3-lines"
-                    src="../assets/unassigned-mission-3-lines.png"
-                    alt=""
-                  />
-                  <div class="mission-status">UNAVAILABLE</div>
-                  <img src="../assets/mission-hero-image.png" alt="" />
-                  <div class="name-of-mission">
-                    <h5>NAME OF MISSION</h5>
-                    <h6>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
-                    </h6>
-                  </div>
-                  <main>
-                    <h6>Time</h6>
-                    <h5>Start in <span>12:32:09</span></h5>
-                  </main>
-                  <button data-tilt class="blue-btn">START MISSION</button>
-                </div>
-              </div>
-              <div class="mission-box assigned-mission-box">
-                <div class="mission-progress">
-                  <div class="mission-progress-inner"></div>
-                </div>
-                <div class="mission-box-container">
-                  <img
-                    class="mission-3-lines"
-                    src="../assets/assigned-mission-3-lines.png"
-                    alt=""
-                  />
-                  <div class="mission-status">ASSIGNED</div>
-                  <img src="../assets/mission-hero-image.png" alt="" />
-                  <div class="name-of-mission">
-                    <h5>NAME OF MISSION</h5>
-                    <h6>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
-                    </h6>
-                  </div>
-                  <main>
-                    <h6>Time</h6>
-                    <h5>Start in <span>12:32:09</span></h5>
-                  </main>
-                  <button data-tilt class="blue-btn">START MISSION</button>
-                </div>
-              </div>
-              <div class="mission-box inprogress-mission-box">
-                <div class="mission-progress">
-                  <div class="mission-progress-inner"></div>
-                </div>
-                <div class="mission-box-container">
-                  <img
-                    class="mission-3-lines"
-                    src="../assets/inprogress-mission-3-lines.png"
-                    alt=""
-                  />
-                  <div class="mission-status">IN PROGRESS</div>
-                  <img src="../assets/mission-hero-image.png" alt="" />
-                  <div class="name-of-mission">
-                    <h5>NAME OF MISSION</h5>
-                    <h6>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
-                    </h6>
-                  </div>
-                  <main>
-                    <h6>Time</h6>
-                    <h5>Start in <span>12:32:09</span></h5>
-                  </main>
-                  <button data-tilt class="blue-btn">START MISSION</button>
-                </div>
-              </div>
-              <div class="mission-box completed-mission-box">
-                <div class="mission-progress">
-                  <div class="mission-progress-inner"></div>
-                </div>
-                <div class="mission-box-container">
-                  <img
-                    class="mission-3-lines"
-                    src="../assets/completed-mission-3-lines.png"
-                    alt=""
-                  />
-                  <div class="mission-status">COMPLETED</div>
-                  <img src="../assets/mission-hero-image.png" alt="" />
-                  <div class="name-of-mission">
-                    <h5>NAME OF MISSION</h5>
-                    <h6>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
-                    </h6>
-                  </div>
-                  <main>
-                    <h6>Time</h6>
-                    <h5>Start in <span>12:32:09</span></h5>
-                  </main>
-                  <button data-tilt class="blue-btn">START MISSION</button>
-                </div>
-              </div>
-            </div>
             <div class="tab-pane fade" id="inprogress">
               <div class="mission-box unassigned-mission-box">
                 <div class="mission-progress">
@@ -531,100 +474,108 @@
             </div>
             <div class="tab-pane fade" id="completed">
               <div class="mission-box unassigned-mission-box">
-                <img
-                  class="mission-3-lines"
-                  src="../assets/unassigned-mission-3-lines.png"
-                  alt=""
-                />
                 <div class="mission-progress">
                   <div class="mission-progress-inner"></div>
                 </div>
-                <div class="mission-status">UNAVAILABLE</div>
-                <img src="../assets/mission-hero-image.png" alt="" />
-                <div class="name-of-mission">
-                  <h5>NAME OF MISSION</h5>
-                  <h6>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </h6>
+                <div class="mission-box-container">
+                  <img
+                    class="mission-3-lines"
+                    src="../assets/unassigned-mission-3-lines.png"
+                    alt=""
+                  />
+                  <div class="mission-status">UNAVAILABLE</div>
+                  <img src="../assets/mission-hero-image.png" alt="" />
+                  <div class="name-of-mission">
+                    <h5>NAME OF MISSION</h5>
+                    <h6>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </h6>
+                  </div>
+                  <main>
+                    <h6>Time</h6>
+                    <h5>Start in <span>12:32:09</span></h5>
+                  </main>
+                  <button data-tilt class="blue-btn">START MISSION</button>
                 </div>
-                <main>
-                  <h6>Time</h6>
-                  <h5>Start in <span>12:32:09</span></h5>
-                </main>
-                <button data-tilt class="blue-btn">START MISSION</button>
               </div>
               <div class="mission-box assigned-mission-box">
-                <img
-                  class="mission-3-lines"
-                  src="../assets/assigned-mission-3-lines.png"
-                  alt=""
-                />
                 <div class="mission-progress">
                   <div class="mission-progress-inner"></div>
                 </div>
-                <div class="mission-status">ASSIGNED</div>
-                <img src="../assets/mission-hero-image.png" alt="" />
-                <div class="name-of-mission">
-                  <h5>NAME OF MISSION</h5>
-                  <h6>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </h6>
+                <div class="mission-box-container">
+                  <img
+                    class="mission-3-lines"
+                    src="../assets/assigned-mission-3-lines.png"
+                    alt=""
+                  />
+                  <div class="mission-status">ASSIGNED</div>
+                  <img src="../assets/mission-hero-image.png" alt="" />
+                  <div class="name-of-mission">
+                    <h5>NAME OF MISSION</h5>
+                    <h6>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </h6>
+                  </div>
+                  <main>
+                    <h6>Time</h6>
+                    <h5>Start in <span>12:32:09</span></h5>
+                  </main>
+                  <button data-tilt class="blue-btn">START MISSION</button>
                 </div>
-                <main>
-                  <h6>Time</h6>
-                  <h5>Start in <span>12:32:09</span></h5>
-                </main>
-                <button data-tilt class="blue-btn">START MISSION</button>
               </div>
               <div class="mission-box inprogress-mission-box">
-                <img
-                  class="mission-3-lines"
-                  src="../assets/inprogress-mission-3-lines.png"
-                  alt=""
-                />
                 <div class="mission-progress">
                   <div class="mission-progress-inner"></div>
                 </div>
-                <div class="mission-status">IN PROGRESS</div>
-                <img src="../assets/mission-hero-image.png" alt="" />
-                <div class="name-of-mission">
-                  <h5>NAME OF MISSION</h5>
-                  <h6>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </h6>
+                <div class="mission-box-container">
+                  <img
+                    class="mission-3-lines"
+                    src="../assets/inprogress-mission-3-lines.png"
+                    alt=""
+                  />
+                  <div class="mission-status">IN PROGRESS</div>
+                  <img src="../assets/mission-hero-image.png" alt="" />
+                  <div class="name-of-mission">
+                    <h5>NAME OF MISSION</h5>
+                    <h6>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </h6>
+                  </div>
+                  <main>
+                    <h6>Time</h6>
+                    <h5>Start in <span>12:32:09</span></h5>
+                  </main>
+                  <button data-tilt class="blue-btn">START MISSION</button>
                 </div>
-                <main>
-                  <h6>Time</h6>
-                  <h5>Start in <span>12:32:09</span></h5>
-                </main>
-                <button data-tilt class="blue-btn">START MISSION</button>
               </div>
               <div class="mission-box completed-mission-box">
-                <img
-                  class="mission-3-lines"
-                  src="../assets/completed-mission-3-lines.png"
-                  alt=""
-                />
                 <div class="mission-progress">
                   <div class="mission-progress-inner"></div>
                 </div>
-                <div class="mission-status">COMPLETED</div>
-                <img src="../assets/mission-hero-image.png" alt="" />
-                <div class="name-of-mission">
-                  <h5>NAME OF MISSION</h5>
-                  <h6>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </h6>
+                <div class="mission-box-container">
+                  <img
+                    class="mission-3-lines"
+                    src="../assets/completed-mission-3-lines.png"
+                    alt=""
+                  />
+                  <div class="mission-status">COMPLETED</div>
+                  <img src="../assets/mission-hero-image.png" alt="" />
+                  <div class="name-of-mission">
+                    <h5>NAME OF MISSION</h5>
+                    <h6>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </h6>
+                  </div>
+                  <main>
+                    <h6>Time</h6>
+                    <h5>Start in <span>12:32:09</span></h5>
+                  </main>
+                  <button data-tilt class="blue-btn">START MISSION</button>
                 </div>
-                <main>
-                  <h6>Time</h6>
-                  <h5>Start in <span>12:32:09</span></h5>
-                </main>
-                <button data-tilt class="blue-btn">START MISSION</button>
               </div>
             </div>
           </div>

@@ -16,7 +16,7 @@
   background-repeat: repeat;
   background-attachment: fixed !important;
   background-size: 100% !important;
-  filter: brightness(0.75) blur(5px);
+  /* filter: brightness(0.75) blur(5px); */
   z-index: 0;
 }
 .main-content {
@@ -24,7 +24,7 @@
   z-index: 1;
 }
 .select-mission::before {
-  background: url("../assets/mission-bg.jpg");
+  background: url("../assets/img.png");
 }
 .mission-main-header {
   display: flex;
@@ -69,7 +69,7 @@
   width: 100%;
   position: relative;
 }
-.mission-box-container{
+.mission-box-container {
   width: 100%;
   padding: 2.25vw 2.5vw;
   display: flex;
@@ -84,7 +84,7 @@
   cursor: pointer;
   clip-path: polygon(
     1.05% 0,
-    97% 0,
+    97.25% 0,
     100% 16%,
     100% 100%,
     0 100%,
@@ -108,7 +108,7 @@
   clip-path: polygon(0 0, 100% 0%, 100% 95%, 0% 100%);
 }
 .mission-progress-inner {
-  width: 0.5vw;
+  width: 100%;
   height: 65%;
   background-color: var(--white);
   clip-path: polygon(0 0, 100% 0%, 100% 95%, 0% 100%);
@@ -118,6 +118,7 @@
 }
 .name-of-mission {
   width: 350px;
+  max-width: 30%;
 }
 .name-of-mission h5 {
   font-size: 1.75vw;
@@ -130,6 +131,10 @@
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 400;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .mission-box button {
   margin: 0 5vw 0 0;
@@ -173,6 +178,7 @@
   left: 0;
   clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
   transform: translate(1.15vw, 0);
+  z-index: 10;
 }
 .unassigned-mission-box .mission-status {
   background-color: var(--gray2);
@@ -208,4 +214,100 @@
   right: 0;
   object-fit: contain;
   transform: translate(-8.75vw, 0);
+}
+@media screen and (max-width: 850px) {
+  .mission-main-header {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0;
+  }
+  .mission-main-header h1 {
+    width: 100%;
+    font-size: 10vw;
+  }
+  .mission-main-header ul {
+    width: 100%;
+    justify-content: space-between;
+    margin: 7.5vw 0;
+  }
+  .mission-main-header ul li a {
+    font-size: 3.5vw;
+    padding: 1.5vw 0;
+  }
+  .mission-box-container {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-image: url("../assets/mission-box-border-mobile.png");
+    padding: 3.5vw 3.5vw 5vw 10vw;
+    background-position: top left;
+    height: 161.5vw;
+    clip-path: polygon(
+      6% 0,
+      96% 0,
+      100% 3%,
+      100% 100%,
+      0 100%,
+      0 41.5%,
+      6% 37.5%
+    );
+  }
+  .mission-box > div > img {
+    width: 100%;
+    height: 60vw;
+    object-fit: cover;
+    clip-path: polygon(0 0, 95% 0, 100% 7.5%, 100% 100%, 0 100%, 0 100%);
+  }
+  .mission-status {
+    padding: 2vw 17.5vw 2vw 5vw;
+    font-size: 5vw;
+    transform: translate(6.15vw, 0);
+  }
+  .name-of-mission {
+    width: 100%;
+    max-width: 100%;
+    margin: 5vw 0;
+  }
+  .name-of-mission h5 {
+    font-size: 7.5vw;
+    margin: 0 0 5vw 0;
+  }
+  .name-of-mission h6 {
+    font-size: 3.5vw;
+    line-height: 1.5rem;
+    margin: 0;
+  }
+  .mission-box main h6 {
+    font-size: 4vw;
+  }
+  .mission-box main h5 {
+    font-size: 4vw;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 3.5vw 0 0 0;
+  }
+  .mission-box main span {
+    font-size: 10vw;
+    margin: 1.5vw 0;
+  }
+  .mission-box button {
+    margin: 10vw 0 0 0;
+  }
+  .mission-box > div > img.mission-3-lines {
+    width: 15vw;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    object-fit: contain;
+    transform: translate(-7.5vw, -0.5vw);
+    height: max-content;
+  }
+  .mission-progress {
+    width: 2.5vw;
+    height: 63.5vw;
+  }
+  .mission-box {
+    margin: 0 0 10vw 0;
+  }
 }
