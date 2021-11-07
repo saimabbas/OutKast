@@ -20,6 +20,7 @@
   --gray4: #bdbdbd;
   --gray6: #f2f2f2;
 }
+p,
 h1,
 h2,
 h3,
@@ -32,7 +33,9 @@ html,
 body {
   width: 100%;
   min-height: 100vh;
-  overflow: overlay;
+  overflow-x: overlay;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
   background-color: var(--black);
 }
 ::-webkit-scrollbar-thumb {
@@ -97,6 +100,8 @@ a:focus {
   align-items: center;
   justify-content: space-between;
   height: 6vw;
+  position: relative;
+  z-index: 100;
 }
 .header-left {
   display: flex;
