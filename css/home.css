@@ -294,6 +294,9 @@
 .home-anchors-container a.active-anchor {
   color: var(--white);
 }
+.about-head-mob {
+  display: none;
+}
 @media screen and (max-width: 850px) {
   .hero-content img {
     width: 150%;
@@ -438,6 +441,7 @@
     font-size: 12.5vw;
     font-weight: 500;
     color: var(--white);
+    display: flex;
     margin: 7.5vw 0 0 0;
   }
   .details .details-content-left p {

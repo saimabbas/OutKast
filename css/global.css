@@ -91,9 +91,9 @@ a:focus {
   transform-style: preserve-3d;
   transform: translateZ(20px);
 }
-/* .blue-btn:hover {
-  background-color: var(--pink);
-} */
+.blue-btn:disabled {
+  opacity: 0.5;
+}
 /* Header */
 .header {
   display: flex;
