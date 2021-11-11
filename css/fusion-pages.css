@@ -278,6 +278,8 @@
   overflow-y: auto;
   max-height: 5vw;
   padding: 0 1vw 0 0;
+  scrollbar-width: thin;
+  scrollbar-color: var(--gray) var(--white);
 }
 .fff-info-box {
   width: 100%;
@@ -386,6 +388,15 @@
   height: 100%;
   background-color: var(--pink);
   border-radius: 1000px;
+}
+.f1-buttons-mob {
+  margin: 0 0 5vw 0;
+  display: none;
+}
+
+.fcct-mob,
+.fccb-mob {
+  display: none;
 }
 @media screen and (max-width: 850px) {
   .fusion-main-heads h6 {
@@ -498,5 +509,101 @@
   }
   .traits-available-box {
     padding: 5vw 5vw 3.5vw 5vw;
+  }
+  .f1-buttons-mob {
+    display: flex;
+  }
+  .fc-central-buttons button {
+    padding: 3vw 4.5vw;
+    width: 47.5%;
+  }
+  .fc-central-buttons {
+    justify-content: space-between;
+  }
+  .fc-grid-cell-left-pink::after {
+    display: none;
+  }
+  .fc-grid-cell-left-pink + p.plus-mob {
+    color: var(--pink);
+  }
+  .fff-info-box p {
+    font-size: 4vw;
+  }
+  .fff-info-box i {
+    font-size: 4vw;
+  }
+  .fff-content {
+    max-height: 35vw;
+    padding: 0 2.5vw 0 0;
+  }
+  .fusion-footer-flow {
+    padding: 3.5vw 5vw;
+    margin: 3.5vw 0 0 0;
+  }
+  .fusion-info-box-pink {
+    height: 71.35vw;
+    padding: 5vw 6vw 0 8vw;
+  }
+  .fusion-info-box-pink img {
+    height: 45vw;
+  }
+  .fusion-info-lines span {
+    width: 1.5vw;
+    height: 7.5vw;
+    margin: 0 0 0 1.5vw;
+    transform: skew(-30deg);
+  }
+  .fusion-info-lines {
+    transform: translate(-6.5vw, 0);
+  }
+  .fusion-info-text-box h5 {
+    font-size: 7.5vw;
+  }
+  .fusion-info-text-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3.5vw 0 0 0;
+  }
+  .fc-central-text {
+    margin: 5vw 0;
+  }
+  .fc-central-text p {
+    font-size: 5vw;
+  }
+  .fcct-mob {
+    display: flex;
+    text-align: center;
+  }
+  .fccb-mob,
+  .fcrb-mob {
+    display: flex;
+    margin: 0 0 5vw 0;
+  }
+  .fcct-pc,
+  .fcrb-pc,
+  .fccb-pc {
+    display: none;
+  }
+  .fcrb-mob button {
+    padding: 3vw 4.5vw;
+    width: 47.5%;
+  }
+  .fc-result-buttons a {
+    font-size: 4.5vw;
+  }
+  .fc-result-buttons a i {
+    font-size: 3vw;
+    margin: 0 2.5vw 0 0;
+  }
+  .fusion-loader-container h6 {
+    font-size: 5vw;
+    margin: 0 0 5vw 0;
+  }
+  .f-loader-outer {
+    width: 100%;
+    height: 2.75vw;
+    border: 0.5vw solid var(--gray);
   }
 }
