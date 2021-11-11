@@ -32,7 +32,7 @@
   background-color: rgba(255, 255, 255, 0.05);
 }
 .traits-available-checkbox {
-  margin: 0 0 1.5vw 0;
+  margin: 0 0 1vw 0;
 }
 .traits-available-checkbox > input {
   display: none;
@@ -79,6 +79,8 @@
   max-height: 35vw;
   overflow-x: hidden;
   overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--gray) var(--white);
 }
 
 .traits-available-content-box::-webkit-scrollbar-thumb {
@@ -90,6 +92,11 @@
 }
 .traits-available-content-box::-webkit-scrollbar {
   width: 0.1vw;
+}
+.traits-available-content-box h6 {
+  color: var(--white);
+  font-size: 1.15vw;
+  margin: 0 0 1vw 0;
 }
 .fusion-locks-available {
   width: 100%;
@@ -104,6 +111,7 @@
   border: 1px solid var(--gray2);
   outline: 0;
   padding: 0 1vw;
+  font-size: 1.15vw;
   color: var(--white);
 }
 .fusion-locks-available input:focus {
@@ -139,9 +147,15 @@
   height: 3vw;
   margin: 0 0 1vw 0;
 }
-.fc-rid-copy-box p {
+.fc-rid-copy-box input {
   font-size: 1vw;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
   color: var(--white);
+}
+.fc-rid-copy-box input::placeholder {
+  font-size: 1vw;
 }
 .fc-rid-copy-box i {
   font-size: 1.25vw;
@@ -150,7 +164,7 @@
 }
 .fusion-info-box {
   width: 100%;
-  height: 20vw;
+  height: 18.35vw;
   background-image: url("../assets/fusion-box-border.png");
   background-position: top left;
   background-repeat: no-repeat;
@@ -315,7 +329,7 @@
 .fc-grid {
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 .fc-grid-2 {
@@ -372,4 +386,117 @@
   height: 100%;
   background-color: var(--pink);
   border-radius: 1000px;
+}
+@media screen and (max-width: 850px) {
+  .fusion-main-heads h6 {
+    font-size: 4vw;
+    margin: 5vw 0 0 0;
+  }
+  .fusion-main-heads h1 {
+    font-size: 10vw;
+    color: var(--white);
+    margin: 1.5vw 0 7.5vw 0;
+  }
+  .fusion-main-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 5vw;
+  }
+  .fusion-grid-center {
+    order: 1;
+    width: 100%;
+  }
+  .fusion-grid-right {
+    order: 2;
+    width: 100%;
+  }
+  .fusion-grid-left {
+    order: 3;
+    width: 100%;
+  }
+  .fc-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .fusion-top-head {
+    font-size: 5vw;
+    margin: 0 0 5vw 0;
+  }
+  .fusion-grid-center > h6 {
+    width: 75%;
+    margin: 0 auto 2.5vw auto;
+  }
+  .fc-grid-cell {
+    width: 100%;
+  }
+  .fc-grid-cell button {
+    display: none;
+  }
+  .fc-rid-copy-box {
+    padding: 0 2.5vw;
+    height: 11.5vw;
+    margin: 0 0 3.5vw 0;
+  }
+  .fc-rid-copy-box input {
+    font-size: 5vw;
+  }
+  .fc-rid-copy-box input::placeholder {
+    font-size: 5vw;
+  }
+  .fc-rid-copy-box i {
+    font-size: 5vw;
+  }
+  .fusion-info-box h6 {
+    font-size: 7.5vw;
+    color: var(--white);
+    margin: 0.5vw 0;
+  }
+  .fusion-info-box {
+    height: 71.35vw;
+  }
+  .fc-grid-cell-left::after {
+    display: none;
+  }
+  .plus-mob {
+    margin: 3.5vw 0;
+    font-size: 7.5vw;
+    color: var(--gray);
+    width: 100%;
+    text-align: center;
+  }
+  .fusion-locks-available button {
+    padding: 3.5vw 6.5vw;
+    font-size: 5vw;
+  }
+  .fusion-locks-available input {
+    width: 75%;
+    height: 12.5vw;
+    font-size: 5vw;
+    padding: 0 2.5vw;
+  }
+  .traits-available-content-box h6 {
+    font-size: 5vw;
+    margin: 0 0 5vw 0;
+  }
+  .traits-available-checkbox > label p {
+    font-size: 4vw;
+    color: var(--white);
+  }
+  .traits-available-checkbox {
+    margin: 0 0 5vw 0;
+  }
+  .traits-available-content-box {
+    max-height: 150vw;
+  }
+  .trait-checkbox-outer {
+    margin: 0 5vw 0 0;
+    width: 6.5vw;
+    height: 6.5vw;
+  }
+  .trait-checkbox-outer span {
+    width: 3.5vw;
+    height: 3.5vw;
+  }
+  .traits-available-box {
+    padding: 5vw 5vw 3.5vw 5vw;
+  }
 }
