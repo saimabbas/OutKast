@@ -190,6 +190,7 @@
 .fc-grid-cell button {
   padding: 1vw 4vw;
   margin: 1.5vw 0 0 0;
+  width: 13.5vw;
 }
 .fc-grid-cell-left::after {
   content: "+";
@@ -326,6 +327,7 @@
 .fc-central-buttons button {
   padding: 1vw 4.5vw;
   margin: 0 0.5vw;
+  width: 13.5vw;
 }
 
 .fc-grid {
